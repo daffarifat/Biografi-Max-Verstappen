@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Max Verstappen Hub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="bg-wrap">
+    <video autoplay muted loop playsinline id="bg-video">
+      <source src="racing-bg.mp4" type="video/mp4">
+    </video>
+    <div class="bg-overlay"></div>
+    <div class="bg-grain"></div>
+  </div>
+
+  <div class="scroll-progress" id="scroll-progress"></div>
+
+  <nav id="navbar">
+    <a href="#biodata" class="logo"><span>MV</span>33</a>
+
+    <button class="nav-toggle" id="nav-toggle" aria-label="Buka menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <div class="nav-links" id="nav-links">
+      <a href="#biodata" class="nav-link">Biodata</a>
+      <a href="#karir" class="nav-link">Karier</a>
+      <a href="#kontak" class="nav-link">Kontak</a>
+      <a href="#saran" class="nav-link">Saran</a>
+    </div>
+  </nav>
+
+  <main>
+
+    <section id="biodata" class="hero reveal">
+      <div class="hero-top">
+        <p class="eyebrow">Pembalap Formula 1 &mdash; Red Bull Racing</p>
+        <h1 class="hero-name">MAX<br><span class="outline">VERSTAPPEN</span></h1>
+      </div>
+
+      <div class="hero-grid">
+        <div class="hero-photo">
+          <img src="max-profile.jpg" alt="Foto Profil Max Verstappen" onerror="this.src="max-profile.jpg">
+          <div class="photo-tag">#33 &mdash; NL</div>
+        </div>
+
+        <div class="hero-text">
+          <h2 class="section-heading">Profil Singkat</h2>
+          <p>Max Emilian Verstappen (lahir 30 September 1997) adalah seorang pembalap mobil profesional asal Belanda yang saat ini berkompetisi di ajang Formula Satu bersama tim Red Bull Racing. Ia merupakan salah satu pembalap muda paling berbakat dalam sejarah F1 dan dikenal dengan gaya balapnya yang agresif serta kemampuannya yang luar biasa dalam kondisi trek basah.</p>
+
+          <h2 class="section-heading">Biodata Pribadi</h2>
+          <p>Verstappen lahir di Hasselt, Belgia. Darah balap mengalir deras di tubuhnya, karena ayahnya, Jos Verstappen, juga merupakan mantan pembalap Formula 1, sementara ibunya, Sophie Kumpen, adalah seorang mantan pembalap karting sukses.</p>
+        </div>
+      </div>
+
+      <div class="telemetry">
+        <div class="telemetry-item">
+          <span class="telemetry-num" data-count="4">0</span>
+          <span class="telemetry-label">Gelar Dunia</span>
+        </div>
+        <div class="telemetry-divider"></div>
+        <div class="telemetry-item">
+          <span class="telemetry-num" data-count="17">0</span>
+          <span class="telemetry-label">Usia Debut F1</span>
+        </div>
+        <div class="telemetry-divider"></div>
+        <div class="telemetry-item">
+          <span class="telemetry-num" data-count="2016">0</span>
+          <span class="telemetry-label">Bersama Red Bull</span>
+        </div>
+        <div class="telemetry-divider"></div>
+        <div class="telemetry-item">
+          <span class="telemetry-num">#33</span>
+          <span class="telemetry-label">Nomor Mobil</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="speed-divider" aria-hidden="true"><span></span></div>
+
+    <section id="karir" class="panel reveal">
+      <p class="eyebrow">Jalur Menuju Juara Dunia</p>
+      <h1>Perjalanan Karier</h1>
+
+      <h2 class="section-heading">Tahapan Karier</h2>
+      <ol class="timeline">
+        <li>
+          <span class="timeline-year">2005&ndash;2013</span>
+          <div class="timeline-body">
+            <strong>Karting</strong>
+            <p>Memulai karier balap sejak usia 4 tahun dan memenangkan berbagai kejuaraan karting tingkat nasional dan internasional.</p>
+          </div>
+        </li>
+        <li>
+          <span class="timeline-year">2014</span>
+          <div class="timeline-body">
+            <strong>Formula 3 Eropa</strong>
+            <p>Berkompetisi di FIA European Formula 3 Championship dan berhasil menempati peringkat ketiga di akhir musim.</p>
+          </div>
+        </li>
+        <li>
+          <span class="timeline-year">2015&ndash;2016</span>
+          <div class="timeline-body">
+            <strong>Scuderia Toro Rosso</strong>
+            <p>Melakukan debut di Formula 1 pada usia 17 tahun 166 hari, menjadikannya pembalap termuda dalam sejarah F1.</p>
+          </div>
+        </li>
+        <li>
+          <span class="timeline-year">2016&ndash;Sekarang</span>
+          <div class="timeline-body">
+            <strong>Red Bull Racing</strong>
+            <p>Pindah ke tim utama Red Bull pada musim 2016 dan langsung memenangkan balapan pertamanya di GP Spanyol.</p>
+          </div>
+        </li>
+      </ol>
+
+      <h2 class="section-heading">Prestasi &amp; Gelar Juara Dunia</h2>
+      <div class="titles-grid">
+        <div class="title-card">
+          <span class="title-year">2021</span>
+          <p>Juara Dunia Formula 1 &mdash; Menghalahkan Lewis Hamilton di Abu Dhabi GP</p>
+        </div>
+        <div class="title-card">
+          <span class="title-year">2022</span>
+          <p>Juara Dunia Formula 1 &mdash; dominasi rekor kemenangan terbanyak</p>
+        </div>
+        <div class="title-card">
+          <span class="title-year">2023</span>
+          <p>Juara Dunia Formula 1 &mdash; mengunci gelar di Qatar</p>
+        </div>
+        <div class="title-card">
+          <span class="title-year">2024</span>
+          <p>Juara Dunia Formula 1</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="speed-divider" aria-hidden="true"><span></span></div>
+
+    <section id="kontak" class="panel reveal">
+      <p class="eyebrow">Profil Pengembang</p>
+      <h1>Kontak Pembuat Website</h1>
+      <p>Website biografi ini dibuat sebagai bagian dari tugas laporan praktikum <em>web design</em> menggunakan HTML dan CSS di Visual Studio Code.</p>
+
+      <h2 class="section-heading">Informasi Pengembang</h2>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <span class="contact-label">Nama Lengkap</span>
+          <span class="contact-value">Daffa Rifat Aryansyah</span>
+        </div>
+        <a class="contact-card contact-link" href="mailto:verizonpong@gmail.com">
+          <span class="contact-label">Email</span>
+          <span class="contact-value">verizonpong@gmail.com</span>
+        </a>
+        <a class="contact-card contact-link" href="https://instagram.com/dapa.ripat" target="_blank" rel="noopener">
+          <span class="contact-label">Instagram</span>
+          <span class="contact-value">@dapa.ripat</span>
+        </a>
+      </div>
+    </section>
+
+    <div class="speed-divider" aria-hidden="true"><span></span></div>
+
+    <section id="saran" class="panel reveal">
+      <p class="eyebrow">Umpan Balik Pengunjung</p>
+      <h1>Formulir Saran</h1>
+      <p>Berikan masukan, kritik, atau saran Anda mengenai website biografi ini.</p>
+
+      <form id="suggestion-form" novalidate>
+        <div class="form-group">
+          <label for="nama">Nama Lengkap</label>
+          <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda..." required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Alamat Email</label>
+          <input type="email" id="email" name="email" placeholder="Masukkan email aktif Anda..." required>
+        </div>
+
+        <div class="form-group">
+          <label for="pesan">Pesan &amp; Saran</label>
+          <textarea id="pesan" name="pesan" rows="5" placeholder="Tuliskan saran Anda di sini..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn-submit">
+          <span>Kirim Saran</span>
+        </button>
+
+        <p class="form-success" id="form-success" role="status" aria-live="polite">Saran Anda berhasil dikirim. Terima kasih!</p>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Dibuat oleh Daffa Rifat Aryansyah &mdash; Tugas Praktikum Web Design</p>
+  </footer>
+
+  <button id="audio-control" aria-pressed="false">
+    <svg class="icon-sound-on" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 5L6 9H2V15H6L11 19V5Z" fill="currentColor"/><path d="M15.5 8.5C16.5 9.5 17 10.7 17 12C17 13.3 16.5 14.5 15.5 15.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M18 5.5C19.8 7.3 20.8 9.6 20.8 12C20.8 14.4 19.8 16.7 18 18.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" opacity="0.6"/></svg>
+    <svg class="icon-sound-off" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 5L6 9H2V15H6L11 19V5Z" fill="currentColor"/><path d="M16 9L21 14M21 9L16 14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+    <span class="audio-label">Sound On</span>
+  </button>
+
+  <button id="back-to-top" aria-label="Kembali ke atas">
+    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 19V5M12 5L5 12M12 5L19 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
